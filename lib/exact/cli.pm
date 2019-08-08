@@ -3,13 +3,31 @@ package exact::cli;
 
 use 5.014;
 use exact;
+use Util::CommandLine 1.04 ();
 
 # VERSION
 
+sub import {
+    my ( $self, $caller ) = @_;
+    $caller //= caller();
 
+    my @methods = qw( options pod2usage readmode singleton );
+    {
+        no strict 'refs';
+        for (@methods) {
+            my $method = "Util::CommandLine::$_";
+            *{ $caller . '::' . $_ } = \&$method unless ( defined &{ $caller . '::' . $_ } );
+        }
 
+        for ('podhelp') {
+            *{ $caller . '::' . $_ } = \&$_ unless ( defined &{ $caller . '::' . $_ } );
+        }
+    }
+}
 
-
+sub podhelp {
+    Util::CommandLine::options();
+}
 
 1;
 __END__
@@ -29,7 +47,53 @@ __END__
 
 =head1 DESCRIPTION
 
-L<exact::cli> is...
+L<exact::cli> is command-line interface helper utilities extension for L<exact>.
+It effectively is an integration of L<Util::CommandLine> with L<exact>.
+Consult the L<Util::CommandLine> documentation for additional information.
+See the L<exact> documentation for additional informatioh about
+extensions. The intended use of L<exact::cli> is via the extension interface
+of L<exact>.
+
+    use exact cli, conf, noutf8;
+
+However, you can also use it directly, which will also use L<exact> with
+default options:
+
+    use exact::cli;
+
+=head1 IMPORTED FUNCTIONS
+
+The following functions are imported:
+
+=head2 options
+
+This is the same function from L<Util::CommandLine>.
+
+=head2 pod2usage
+
+This is the same function from L<Util::CommandLine>.
+
+=head2 readmode
+
+This is the same function from L<Util::CommandLine>.
+
+=head2 singleton
+
+This function is the equivalent of the C<singleton> flag to L<Util::CommandLine>.
+
+    use Util::CommandLine 'singleton';
+
+However, note that calling this method executes the functionally at runtime, not
+during import, which is normally what happens with L<Util::CommandLine>.
+
+=head2 podhelp
+
+This function is the equivalent of the C<podhelp> flag to L<Util::CommandLine>.
+
+    use Util::CommandLine 'podhelp';
+
+However, note that calling this method executes the functionally at runtime, not
+during import, which is normally what happens with L<Util::CommandLine>.
 
 =head1 SEE ALSO
 

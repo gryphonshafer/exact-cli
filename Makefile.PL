@@ -17,7 +17,9 @@ my %WriteMakefileArgs = (
   "MIN_PERL_VERSION" => "5.014",
   "NAME" => "exact::cli",
   "PREREQ_PM" => {
-    "exact" => 0
+    "Util::CommandLine" => "1.04",
+    "exact" => 0,
+    "strict" => 0
   },
   "TEST_REQUIRES" => {
     "File::Spec" => 0,
@@ -25,8 +27,7 @@ my %WriteMakefileArgs = (
     "IPC::Open3" => 0,
     "Test::More" => 0,
     "Test::Most" => 0,
-    "exact::role" => 0,
-    "strict" => 0,
+    "lib" => 0,
     "warnings" => 0
   },
   "VERSION" => "1.01",
@@ -42,8 +43,9 @@ my %FallbackPrereqs = (
   "IPC::Open3" => 0,
   "Test::More" => 0,
   "Test::Most" => 0,
+  "Util::CommandLine" => "1.04",
   "exact" => 0,
-  "exact::role" => 0,
+  "lib" => 0,
   "strict" => 0,
   "warnings" => 0
 );
