@@ -1,5 +1,4 @@
 use Test::Most;
-use lib '/home/gryphon/cpan/Util-CommandLine/lib';
 
 BEGIN {
     use_ok( 'exact', 'cli', 'noautoclean' );
