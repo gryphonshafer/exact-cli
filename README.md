@@ -4,14 +4,14 @@ exact::cli - Command-line interface helper utilities extension for exact
 
 # VERSION
 
-version 1.01
+version 1.02
 
 [![Build Status](https://travis-ci.org/gryphonshafer/exact-cli.svg)](https://travis-ci.org/gryphonshafer/exact-cli)
 [![Coverage Status](https://coveralls.io/repos/gryphonshafer/exact-cli/badge.png)](https://coveralls.io/r/gryphonshafer/exact-cli)
 
 # SYNOPSIS
 
-    use exact cli;
+    use exact -cli;
 
 # DESCRIPTION
 
@@ -22,7 +22,7 @@ See the [exact](https://metacpan.org/pod/exact) documentation for additional inf
 extensions. The intended use of [exact::cli](https://metacpan.org/pod/exact::cli) is via the extension interface
 of [exact](https://metacpan.org/pod/exact).
 
-    use exact cli, conf, noutf8;
+    use exact -cli, -conf, -noutf8;
 
 However, you can also use it directly, which will also use [exact](https://metacpan.org/pod/exact) with
 default options:

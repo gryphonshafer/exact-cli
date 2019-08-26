@@ -44,7 +44,7 @@ __END__
 
 =head1 SYNOPSIS
 
-    use exact cli;
+    use exact -cli;
 
 =head1 DESCRIPTION
 
@@ -55,7 +55,7 @@ See the L<exact> documentation for additional informatioh about
 extensions. The intended use of L<exact::cli> is via the extension interface
 of L<exact>.
 
-    use exact cli, conf, noutf8;
+    use exact -cli, -conf, -noutf8;
 
 However, you can also use it directly, which will also use L<exact> with
 default options:
