@@ -1,7 +1,7 @@
 package exact::cli;
 # ABSTRACT: Command-line interface helper utilities extension for exact
 
-use 5.010;
+use 5.014;
 use exact;
 use strict;
 use Util::CommandLine 1.04 ();
