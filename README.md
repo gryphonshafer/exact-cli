@@ -15,11 +15,11 @@ version 1.03
 
 # DESCRIPTION
 
-[exact::cli](https://metacpan.org/pod/exact::cli) is command-line interface helper utilities extension for [exact](https://metacpan.org/pod/exact).
-It effectively is an integration of [Util::CommandLine](https://metacpan.org/pod/Util::CommandLine) with [exact](https://metacpan.org/pod/exact).
-Consult the [Util::CommandLine](https://metacpan.org/pod/Util::CommandLine) documentation for additional information.
-See the [exact](https://metacpan.org/pod/exact) documentation for additional informatioh about
-extensions. The intended use of [exact::cli](https://metacpan.org/pod/exact::cli) is via the extension interface
+[exact::cli](https://metacpan.org/pod/exact%3A%3Acli) is command-line interface helper utilities extension for [exact](https://metacpan.org/pod/exact).
+It effectively is an integration of [Util::CommandLine](https://metacpan.org/pod/Util%3A%3ACommandLine) with [exact](https://metacpan.org/pod/exact).
+Consult the [Util::CommandLine](https://metacpan.org/pod/Util%3A%3ACommandLine) documentation for additional information.
+See the [exact](https://metacpan.org/pod/exact) documentation for additional information about
+extensions. The intended use of [exact::cli](https://metacpan.org/pod/exact%3A%3Acli) is via the extension interface
 of [exact](https://metacpan.org/pod/exact).
 
     use exact -cli, -conf, -noutf8;
@@ -35,42 +35,40 @@ The following functions are imported:
 
 ## options
 
-This is the same function from [Util::CommandLine](https://metacpan.org/pod/Util::CommandLine).
+This is the same function from [Util::CommandLine](https://metacpan.org/pod/Util%3A%3ACommandLine).
 
 ## pod2usage
 
-This is the same function from [Util::CommandLine](https://metacpan.org/pod/Util::CommandLine).
+This is the same function from [Util::CommandLine](https://metacpan.org/pod/Util%3A%3ACommandLine).
 
 ## readmode
 
-This is the same function from [Util::CommandLine](https://metacpan.org/pod/Util::CommandLine).
+This is the same function from [Util::CommandLine](https://metacpan.org/pod/Util%3A%3ACommandLine).
 
 ## singleton
 
-This function is the equivalent of the `singleton` flag to [Util::CommandLine](https://metacpan.org/pod/Util::CommandLine).
+This function is the equivalent of the `singleton` flag to [Util::CommandLine](https://metacpan.org/pod/Util%3A%3ACommandLine).
 
     use Util::CommandLine 'singleton';
 
 However, note that calling this method executes the functionally at runtime, not
-during import, which is normally what happens with [Util::CommandLine](https://metacpan.org/pod/Util::CommandLine).
+during import, which is normally what happens with [Util::CommandLine](https://metacpan.org/pod/Util%3A%3ACommandLine).
 
 ## podhelp
 
-This function is the equivalent of the `podhelp` flag to [Util::CommandLine](https://metacpan.org/pod/Util::CommandLine).
+This function is the equivalent of the `podhelp` flag to [Util::CommandLine](https://metacpan.org/pod/Util%3A%3ACommandLine).
 
     use Util::CommandLine 'podhelp';
 
 However, note that calling this method executes the functionally at runtime, not
-during import, which is normally what happens with [Util::CommandLine](https://metacpan.org/pod/Util::CommandLine).
+during import, which is normally what happens with [Util::CommandLine](https://metacpan.org/pod/Util%3A%3ACommandLine).
 
 # SEE ALSO
 
 You can look for additional information at:
 
 - [GitHub](https://github.com/gryphonshafer/exact-cli)
-- [CPAN](http://search.cpan.org/dist/exact-cli)
 - [MetaCPAN](https://metacpan.org/pod/exact::cli)
-- [AnnoCPAN](http://annocpan.org/dist/exact-cli)
 - [Travis CI](https://travis-ci.org/gryphonshafer/exact-cli)
 - [Coveralls](https://coveralls.io/r/gryphonshafer/exact-cli)
 - [CPANTS](http://cpants.cpanauthors.org/dist/exact-cli)
@@ -82,7 +80,7 @@ Gryphon Shafer <gryphon@cpan.org>
 
 # COPYRIGHT AND LICENSE
 
-This software is copyright (c) 2019 by Gryphon Shafer.
+This software is copyright (c) 2020 by Gryphon Shafer.
 
 This is free software; you can redistribute it and/or modify it under
 the same terms as the Perl 5 programming language system itself.

@@ -51,7 +51,7 @@ __END__
 L<exact::cli> is command-line interface helper utilities extension for L<exact>.
 It effectively is an integration of L<Util::CommandLine> with L<exact>.
 Consult the L<Util::CommandLine> documentation for additional information.
-See the L<exact> documentation for additional informatioh about
+See the L<exact> documentation for additional information about
 extensions. The intended use of L<exact::cli> is via the extension interface
 of L<exact>.
 
