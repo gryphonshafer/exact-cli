@@ -4,10 +4,10 @@ exact::cli - Command-line interface helper utilities extension for exact
 
 # VERSION
 
-version 1.03
+version 1.04
 
-[![Build Status](https://travis-ci.org/gryphonshafer/exact-cli.svg)](https://travis-ci.org/gryphonshafer/exact-cli)
-[![Coverage Status](https://coveralls.io/repos/gryphonshafer/exact-cli/badge.png)](https://coveralls.io/r/gryphonshafer/exact-cli)
+[![build](https://github.com/gryphonshafer/exact-cli/workflows/build/badge.svg)](https://github.com/gryphonshafer/exact-cli/actions?query=workflow%3Abuild)
+[![codecov](https://codecov.io/gh/gryphonshafer/exact-cli/graph/badge.svg)](https://codecov.io/gh/gryphonshafer/exact-cli)
 
 # SYNOPSIS
 
@@ -69,8 +69,8 @@ You can look for additional information at:
 
 - [GitHub](https://github.com/gryphonshafer/exact-cli)
 - [MetaCPAN](https://metacpan.org/pod/exact::cli)
-- [Travis CI](https://travis-ci.org/gryphonshafer/exact-cli)
-- [Coveralls](https://coveralls.io/r/gryphonshafer/exact-cli)
+- [GitHub Actions](https://github.com/gryphonshafer/exact-cli/actions)
+- [Codecov](https://codecov.io/gh/gryphonshafer/exact-cli)
 - [CPANTS](http://cpants.cpanauthors.org/dist/exact-cli)
 - [CPAN Testers](http://www.cpantesters.org/distro/D/exact-cli.html)
 
@@ -80,7 +80,7 @@ Gryphon Shafer <gryphon@cpan.org>
 
 # COPYRIGHT AND LICENSE
 
-This software is copyright (c) 2020 by Gryphon Shafer.
+This software is copyright (c) 2021 by Gryphon Shafer.
 
 This is free software; you can redistribute it and/or modify it under
 the same terms as the Perl 5 programming language system itself.
