@@ -37,7 +37,7 @@ __END__
 =begin :badges
 
 =for markdown
-[![build](https://github.com/gryphonshafer/exact-cli/workflows/build/badge.svg)](https://github.com/gryphonshafer/exact-cli/actions?query=workflow%3Abuild)
+[![test](https://github.com/gryphonshafer/exact-cli/workflows/test/badge.svg)](https://github.com/gryphonshafer/exact-cli/actions?query=workflow%3Atest)
 [![codecov](https://codecov.io/gh/gryphonshafer/exact-cli/graph/badge.svg)](https://codecov.io/gh/gryphonshafer/exact-cli)
 
 =end :badges
