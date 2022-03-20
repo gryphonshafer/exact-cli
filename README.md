@@ -4,7 +4,7 @@ exact::cli - Command-line interface helper utilities extension for exact
 
 # VERSION
 
-version 1.05
+version 1.06
 
 [![test](https://github.com/gryphonshafer/exact-cli/workflows/test/badge.svg)](https://github.com/gryphonshafer/exact-cli/actions?query=workflow%3Atest)
 [![codecov](https://codecov.io/gh/gryphonshafer/exact-cli/graph/badge.svg)](https://codecov.io/gh/gryphonshafer/exact-cli)
@@ -80,7 +80,7 @@ Gryphon Shafer <gryphon@cpan.org>
 
 # COPYRIGHT AND LICENSE
 
-This software is Copyright (c) 2019-2021 by Gryphon Shafer.
+This software is Copyright (c) 2019-2050 by Gryphon Shafer.
 
 This is free software, licensed under:
 
