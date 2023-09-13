@@ -3,18 +3,18 @@ package exact::cli;
 
 use 5.014;
 use exact;
-use strict;
 use Util::CommandLine 1.04 ();
 
 # VERSION
 
 sub import {
-    my ( $self, $caller ) = @_;
+    my ( $self, $params, $caller ) = @_;
     $caller //= caller();
 
     my @methods = qw( options pod2usage readmode singleton );
     {
         no strict 'refs';
+
         for (@methods) {
             my $method = "Util::CommandLine::$_";
             *{ $caller . '::' . $_ } = \&$method unless ( defined &{ $caller . '::' . $_ } );
